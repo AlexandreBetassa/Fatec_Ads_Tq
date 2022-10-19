@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div id="buttons">
+            <div>
+                <label>id</label>
+                <input id="user" type="number" placeholder="id usuario" />
+                <button onclick="getById()">get 1</button>
+            </div>
+            <div>
+                <label>Titulo</label>
+                <input id="post" type="text" placeholder="titulo" />
+                <input id="sabor" type="text" placeholder="titulo" />
+
+                <button onclick="post()">Post</button>
+            </div>
+            <div>
+                <label>id</label>
+                <input id="update" type="number" />
+                <label>titulo</label>
+                <input id="update-title" type="text" />
+                <button onclick="put()">Update</button>
+            </div>
+            <div>
+                <label>Id</label>
+                <input id="delete" type="number" />
+                <button onclick="remove()">Deletar</button>
+            </div>
+            <div>
+                <label>Titulo</label>
+                <input id="all" type="text" />
+                <button onclick="todo()">all</button>
+            </div>
+            <button onclick="get()">get all</button>
+        </div>
+        <div id="text">
+
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
